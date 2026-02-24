@@ -18,3 +18,4 @@ Open the URL Vite prints (usually http://localhost:5173).
 - Apps / windows: `src/constants/apps.js`
 - Content: `src/apps/*`
 - Theme store: `src/store/theme.js`
+# portfolio-macos
