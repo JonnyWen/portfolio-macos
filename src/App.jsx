@@ -5,6 +5,8 @@ import TopBar from "./components/TopBar.jsx";
 import ControlCenter from "./components/ControlCenter.jsx";
 import { dockApps } from "./constants/apps.js";
 import { useTheme } from "./store/theme.js";
+import Welcome from "./components/Welcome";
+import BackgroundText from "./components/BackgroundText";
 
 export default function App() {
   const { mode, resolved } = useTheme();
@@ -57,16 +59,24 @@ export default function App() {
   return (
     <div className={`h-full ${resolvedTheme === "light" ? "theme-light" : "theme-dark"}`}>
       <div className="h-full bg-wallpaper relative overflow-hidden select-none">
-        <TopBar onToggleControlCenter={() => setCcOpen((v) => !v)} />
-        <Desktop
-          openApps={openApps}
-          appsById={appsById}
-          onClose={closeApp}
-          onFocus={bringToFront}
-        />
-        <Dock apps={dockApps} openApps={openApps} onOpen={openApp} />
-        <ControlCenter open={ccOpen} onClose={() => setCcOpen(false)} />
-      </div>
+
+{/* BACKGROUND TEXT */}
+<BackgroundText />
+
+<TopBar onToggleControlCenter={() => setCcOpen((v) => !v)} />
+
+<Desktop
+  openApps={openApps}
+  appsById={appsById}
+  onClose={closeApp}
+  onFocus={bringToFront}
+/>
+
+<Dock apps={dockApps} openApps={openApps} onOpen={openApp} />
+
+<ControlCenter open={ccOpen} onClose={() => setCcOpen(false)} />
+
+</div>
     </div>
   );
 }
