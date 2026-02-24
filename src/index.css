@@ -25,9 +25,9 @@ body {
 
 .theme-light .bg-wallpaper {
   background:
-    radial-gradient(1200px 600px at 20% 10%, rgba(0,0,0,0.06), transparent 55%),
-    radial-gradient(900px 500px at 80% 20%, rgba(0,0,0,0.05), transparent 60%),
-    linear-gradient(135deg, #e7f0ff 0%, #dbe7ff 45%, #edf4ff 100%);
+    radial-gradient(1200px 600px at 20% 10%, rgba(0,0,0,0.15), transparent 55%),
+    radial-gradient(900px 500px at 80% 20%, rgba(0,0,0,0.12), transparent 60%),
+    linear-gradient(135deg, #bccbff 0%, #b3c5ff 45%, #cbd8ff 100%);
 }
 
 @keyframes fadeIn {
