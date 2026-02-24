@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+.bg-wallpaper {
+  background:
+    radial-gradient(1200px 600px at 20% 10%, rgba(255,255,255,0.18), transparent 55%),
+    radial-gradient(900px 500px at 80% 20%, rgba(255,255,255,0.12), transparent 60%),
+    radial-gradient(900px 700px at 70% 90%, rgba(0,0,0,0.25), transparent 50%),
+    linear-gradient(135deg, #0b1220 0%, #10233e 45%, #0b1220 100%);
+}
+
+.theme-light .bg-wallpaper {
+  background:
+    radial-gradient(1200px 600px at 20% 10%, rgba(0,0,0,0.06), transparent 55%),
+    radial-gradient(900px 500px at 80% 20%, rgba(0,0,0,0.05), transparent 60%),
+    linear-gradient(135deg, #e7f0ff 0%, #dbe7ff 45%, #edf4ff 100%);
+}
